@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AFNetworking.h"
 
 #define FRAME_WIDTH  self.view.frame.size.width
 #define FRAME_HEIGHT self.view.frame.size.height
