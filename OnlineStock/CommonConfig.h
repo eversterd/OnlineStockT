@@ -14,6 +14,8 @@
 
 @interface CommonConfig : NSObject
 
-- (void)getStockInfo:(NSArray *)stockIds;
+- (void)getStockInfo:(NSArray *)stockIds
+             success:(void(^)(NSURLSessionDataTask *task, id responseObject))success
+             failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure;
 
 @end
