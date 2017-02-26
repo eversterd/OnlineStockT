@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FD90625C87F286C07472F88 /* libPods-OnlineStock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A70149E8925128A774207A84 /* libPods-OnlineStock.a */; };
 		FEE6820F1E62CCC00024C993 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE6820E1E62CCC00024C993 /* AppDelegate.m */; };
 		FEE682121E62CCC00024C993 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE682111E62CCC00024C993 /* main.m */; };
 		FEE682151E62CCC00024C993 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE682141E62CCC00024C993 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		FEE6821A1E62CCC00024C993 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE682181E62CCC00024C993 /* Main.storyboard */; };
 		FEE682251E62CCC00024C993 /* OnlineStockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE682241E62CCC00024C993 /* OnlineStockTests.m */; };
 		FEE682301E62CCC00024C993 /* OnlineStockUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE6822F1E62CCC00024C993 /* OnlineStockUITests.m */; };
+		FEE682411E62CE900024C993 /* CommonConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE682401E62CE900024C993 /* CommonConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7AE4A3ECD57BE12D1D977D27 /* Pods-OnlineStock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlineStock.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnlineStock/Pods-OnlineStock.release.xcconfig"; sourceTree = "<group>"; };
+		A70149E8925128A774207A84 /* libPods-OnlineStock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnlineStock.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA3496C70D6C93B63EBB6C76 /* Pods-OnlineStock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlineStock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnlineStock/Pods-OnlineStock.debug.xcconfig"; sourceTree = "<group>"; };
 		FEE6820A1E62CCC00024C993 /* OnlineStock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineStock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE6820D1E62CCC00024C993 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FEE6820E1E62CCC00024C993 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,6 +54,8 @@
 		FEE6822B1E62CCC00024C993 /* OnlineStockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineStockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE6822F1E62CCC00024C993 /* OnlineStockUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnlineStockUITests.m; sourceTree = "<group>"; };
 		FEE682311E62CCC00024C993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEE6823F1E62CE900024C993 /* CommonConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonConfig.h; sourceTree = "<group>"; };
+		FEE682401E62CE900024C993 /* CommonConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FD90625C87F286C07472F88 /* libPods-OnlineStock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C1F31AC6917C623BF1A6483 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A70149E8925128A774207A84 /* libPods-OnlineStock.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9FCA8CB7A95F879487DAD32F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA3496C70D6C93B63EBB6C76 /* Pods-OnlineStock.debug.xcconfig */,
+				7AE4A3ECD57BE12D1D977D27 /* Pods-OnlineStock.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FEE682011E62CCBF0024C993 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				FEE682231E62CCC00024C993 /* OnlineStockTests */,
 				FEE6822E1E62CCC00024C993 /* OnlineStockUITests */,
 				FEE6820B1E62CCC00024C993 /* Products */,
+				9FCA8CB7A95F879487DAD32F /* Pods */,
+				7C1F31AC6917C623BF1A6483 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +128,8 @@
 			children = (
 				FEE6820D1E62CCC00024C993 /* AppDelegate.h */,
 				FEE6820E1E62CCC00024C993 /* AppDelegate.m */,
-				FEE682131E62CCC00024C993 /* ViewController.h */,
-				FEE682141E62CCC00024C993 /* ViewController.m */,
+				FEE6823E1E62CE570024C993 /* Common */,
+				FEE6823D1E62CE330024C993 /* Controllers */,
 				FEE682161E62CCC00024C993 /* Assets.xcassets */,
 				FEE682181E62CCC00024C993 /* Main.storyboard */,
 				FEE6821B1E62CCC00024C993 /* Info.plist */,
@@ -137,6 +164,24 @@
 			path = OnlineStockUITests;
 			sourceTree = "<group>";
 		};
+		FEE6823D1E62CE330024C993 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FEE682131E62CCC00024C993 /* ViewController.h */,
+				FEE682141E62CCC00024C993 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FEE6823E1E62CE570024C993 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FEE6823F1E62CE900024C993 /* CommonConfig.h */,
+				FEE682401E62CE900024C993 /* CommonConfig.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEE682341E62CCC00024C993 /* Build configuration list for PBXNativeTarget "OnlineStock" */;
 			buildPhases = (
+				024BEFE97574BF2897C67AAD /* [CP] Check Pods Manifest.lock */,
 				FEE682061E62CCBF0024C993 /* Sources */,
 				FEE682071E62CCBF0024C993 /* Frameworks */,
 				FEE682081E62CCBF0024C993 /* Resources */,
+				085772B18A3FD9E8D2681C85 /* [CP] Embed Pods Frameworks */,
+				F42184FB8053B5857CD8772F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,11 +315,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		024BEFE97574BF2897C67AAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		085772B18A3FD9E8D2681C85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OnlineStock/Pods-OnlineStock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F42184FB8053B5857CD8772F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OnlineStock/Pods-OnlineStock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FEE682061E62CCBF0024C993 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE682411E62CE900024C993 /* CommonConfig.m in Sources */,
 				FEE682151E62CCC00024C993 /* ViewController.m in Sources */,
 				FEE682121E62CCC00024C993 /* main.m in Sources */,
 				FEE6820F1E62CCC00024C993 /* AppDelegate.m in Sources */,
@@ -410,6 +507,7 @@
 		};
 		FEE682351E62CCC00024C993 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA3496C70D6C93B63EBB6C76 /* Pods-OnlineStock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -423,6 +521,7 @@
 		};
 		FEE682361E62CCC00024C993 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AE4A3ECD57BE12D1D977D27 /* Pods-OnlineStock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
